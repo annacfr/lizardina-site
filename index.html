@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fdfdfb">
+  <meta name="description" content="Для всех это Лиза. Но для меня это Лизардина. Моя версия нашей истории.">
+  <title>Для меня — Лизардина</title>
+  <link rel="preload" href="assets/fonts/Caveat.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contents">Перейти к разделам</a>
+  <main id="top">
+    <section class="intro" aria-label="Для всех это Лиза. Но для меня это Лизардина">
+      <h1>для всех это<br>Лиза</h1>
+      <div id="hero-photo" class="hero-photo"></div>
+      <p class="hand intro-but">Но для меня это</p>
+      <div class="nickname-wrap">
+        <p class="hand nickname" id="nickname">Лизардина</p>
+        <svg class="nickname-arrows ink" viewBox="0 0 350 148" aria-hidden="true"><path d="M38 13C-23 9 0 72 61 99C85 109 112 119 134 132M125 125L135 132L121 134M320 7C369-7 356 43 313 79L238 133M240 116L238 134L255 128"/></svg>
+      </div>
+      <a class="hand story-start" href="#contents">и тут начинается<br>моя версия истории<svg class="ink down" viewBox="0 0 45 62" aria-hidden="true"><path d="M24 3L22 54M8 37L22 56L36 37"/></svg></a>
+    </section>
+
+    <section id="contents" class="contents" aria-labelledby="contents-title">
+      <div class="funny-wrap">
+        <svg class="ink point point-left" viewBox="0 0 80 94" aria-hidden="true"><path d="M5 5C8 36 35 56 67 66M55 45L68 67L45 73"/></svg>
+        <div id="funny-photo"></div>
+        <svg class="ink point point-right" viewBox="0 0 80 94" aria-hidden="true"><path d="M73 4C52 22 36 43 22 65M27 42L21 66L46 61"/></svg>
+      </div>
+      <h2 class="hand" id="contents-title">что тут вообще есть</h2>
+      <nav aria-label="Разделы истории" class="contents-list" id="navigation"></nav>
+      <a class="hand next-note" href="#origin">сначала —<br>история появления<svg class="ink down" viewBox="0 0 45 62" aria-hidden="true"><path d="M23 3Q25 28 21 55M9 39L21 56L35 39"/></svg></a>
+    </section>
+
+    <section id="origin" class="chapter origin" aria-labelledby="origin-title">
+      <h2 class="hand" id="origin-title">история появления</h2>
+      <svg class="ink origin-arrow" viewBox="0 0 70 66" aria-hidden="true"><path d="M49 3C72 28 35 45 14 53M22 39L13 54L32 54"/></svg>
+      <button class="video-preview" id="video-button" aria-label="Открыть видео: история появления Лизардины">
+        <img id="video-cover" src="assets/placeholders/photo.svg" alt="Обложка старого видео, пока заглушка" width="640" height="500" loading="lazy" decoding="async">
+        <span class="play" aria-hidden="true"></span>
+        <span class="video-label">видео</span>
+      </button>
+      <p class="origin-copy" id="origin-intro"></p>
+      <div class="traits"><p>отличительные черты:</p><ul id="origin-traits"></ul></div>
+      <p class="footnote">документальные кадры,<br>качество соответствующее эпохе.</p>
+      <a class="back" href="#contents">к оглавлению ↑</a>
+    </section>
+
+    <section id="habitat" class="chapter habitat" aria-labelledby="habitat-title">
+      <h2 class="hand" id="habitat-title">Лизардина в естественной<br>среде обитания</h2>
+      <div class="school-drawing" id="school-drawing"></div>
+      <p class="hand drawing-caption">место действия — школа</p>
+      <div class="school-photos" id="school-photos"></div>
+      <a class="back" href="#contents">к оглавлению ↑</a>
+    </section>
+
+    <section id="manifestations" class="chapter manifestations" aria-labelledby="manifestations-title">
+      <h2 class="hand" id="manifestations-title">Лизардина<br>во всех её проявлениях</h2>
+      <div class="gallery" id="gallery"></div>
+      <a class="back" href="#contents">к оглавлению ↑</a>
+    </section>
+
+    <section id="legacy" class="chapter legacy" aria-labelledby="legacy-title">
+      <h2 class="hand" id="legacy-title">литературное наследие<br>Лизардины</h2>
+      <p class="small-intro">наша детская история</p>
+      <button class="book-cover" id="book-button" aria-haspopup="dialog">
+        <span class="hand book-title">Уборщица<br>Аня</span>
+        <span class="book-authors">написано нами в детстве</span>
+        <span class="hand open-note">открыть книгу →</span>
+      </button>
+      <a class="back" href="#contents">к оглавлению ↑</a>
+    </section>
+
+    <section id="letter" class="chapter letter" aria-labelledby="letter-title">
+      <h2 class="hand" id="letter-title">письмо от меня<br>Лизардине</h2>
+      <button class="envelope" id="letter-button" aria-haspopup="dialog" aria-label="Открыть письмо Лизардине">
+        <svg class="envelope-lines" viewBox="0 0 320 200" aria-hidden="true"><path d="M4 4L316 5L314 195L6 197ZM5 5L157 118Q161 122 166 118L315 6M5 195L110 83M314 195L212 84"/></svg>
+        <span class="hand envelope-name">Лизардине</span>
+      </button>
+      <p class="hand letter-note">это тебе. открывай.</p>
+      <p class="hand birthday">с 17-летием, Лиза!</p>
+      <a class="back" href="#top">к началу истории ↑</a>
+    </section>
+  </main>
+
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-caption">
+    <button class="close" data-close aria-label="Закрыть фотографию">×</button>
+    <figure><img id="large-photo" alt="" width="800" height="1000"><figcaption id="photo-caption"></figcaption></figure>
+  </dialog>
+  <dialog id="video-dialog" class="paper-dialog video-dialog" aria-labelledby="video-title">
+    <button class="close" data-close aria-label="Закрыть видео">×</button>
+    <h2 class="hand" id="video-title">те самые кадры</h2>
+    <div id="video-content"></div>
+  </dialog>
+  <dialog id="book-dialog" class="paper-dialog book-dialog" aria-labelledby="book-heading">
+    <button class="close" data-close aria-label="Закрыть книгу">×</button>
+    <h2 class="hand" id="book-heading">Уборщица Аня</h2>
+    <div class="book-page" id="book-page"></div>
+    <div class="page-controls"><button id="prev-page" aria-label="Предыдущая страница">←</button><span id="page-count" aria-live="polite"></span><button id="next-page" aria-label="Следующая страница">→</button></div>
+  </dialog>
+  <dialog id="letter-dialog" class="paper-dialog letter-dialog" aria-labelledby="letter-heading">
+    <button class="close" data-close aria-label="Закрыть письмо">×</button>
+    <h2 class="hand" id="letter-heading"></h2>
+    <div id="letter-content" class="hand letter-content"></div>
+    <p id="letter-signature" class="hand letter-signature"></p>
+  </dialog>
+</body>
+</html>
