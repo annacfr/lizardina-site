@@ -35,8 +35,8 @@ window.LIZARDINA_CONTENT = {
     }
   ],
   "origin": {
-    "youtubeUrl": "",
-    "cover": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=W1n5LQFh7H4",
+    "cover": "https://i.ytimg.com/vi/W1n5LQFh7H4/hqdefault.jpg",
     "intro": "в первый раз человечеству удалось зафиксировать лизардину.",
     "traits": [
       "обитает в гаражах",
