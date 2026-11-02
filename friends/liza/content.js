@@ -86,7 +86,7 @@ window.LIZARDINA_CONTENT = {
       "src": "photos/thumb-liza-04.webp",
       "full": "photos/full-liza-04.webp",
       "alt": "Крупный план Лизы, фото 4",
-      "caption": "Невинная Лиза с низу. Без агрессивного подтекста.",
+      "caption": "Невинная Лиза снизу. Без агрессивного подтекста.",
       "ratio": "4 / 3"
     },
     {
