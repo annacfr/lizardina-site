@@ -1,14 +1,3 @@
-// Тексты и фотографии главной страницы меняются здесь.
-window.BANDA_CONTENT = {
-  intro: "Этот сайт — для моих троих подруг.\nЗдесь будет немного о нашей дружбе, а у каждой — своя страница.",
-  greetings: {
-    caption: "", // Сюда позже добавим твой текст под фотографиями.
-    photos: [
-      { src: "assets/photos/greetings/from-me-01.jpg", alt: "Мои поздравления — фотография 1", width: 960, height: 1280, caption: "Мои любимые.\nЯ надеюсь, вы усытесь от этого сайта." },
-      { src: "assets/photos/greetings/from-me-02.jpg", alt: "Мои поздравления — фотография 2", width: 956, height: 1280, caption: "Всем йо! Двигаемся на тихом.\nКому не понравится, будете иметь дело со мной." }
-    ]
-  }
-};
 const bandaContent = window.BANDA_CONTENT;
 document.getElementById('friendship-intro').textContent = bandaContent.intro;
 document.getElementById('greeting-caption').textContent = bandaContent.greetings.caption;

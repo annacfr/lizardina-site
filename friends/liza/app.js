@@ -3,7 +3,7 @@
   'use strict';
   const c = window.LIZARDINA_CONTENT;
   const $ = id => document.getElementById(id);
-  const placeholder = 'assets/placeholders/photo.svg';
+  const placeholder = '../../shared/placeholders/photo.svg';
   let bookPage = 0;
   let lastFocused = null;
 
