@@ -46,124 +46,124 @@ window.LIZARDINA_CONTENT = {
       "src": "photos/thumb-liza-02.webp",
       "full": "photos/full-liza-02.webp",
       "alt": "Лиза в белой кофте, школьный кадр",
-      "caption": "",
+      "caption": "достаточно любопытная Лиза. В глазах мы можем заметить искринку.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-12.webp",
       "full": "photos/full-liza-12.webp",
       "alt": "Лиза в зелёной кофте, школьный кадр",
-      "caption": "",
+      "caption": "Лизардина - Момо достаточно редкое сочетание. рекомендуем обходить стороной.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-white-shirt.webp",
       "full": "photos/full-white-shirt.webp",
       "alt": "Портрет Лизы в белой кофте",
-      "caption": ""
+      "caption": "Невинная Лиза с агрессивным подтекстом."
     },
     {
       "src": "photos/thumb-black-and-white.webp",
       "full": "photos/full-black-and-white.webp",
       "alt": "Чёрно-белый портрет Лизы",
-      "caption": ""
+      "caption": "RIP Лизардина."
     },
     {
       "src": "photos/thumb-arms-up.webp",
       "full": "photos/full-arms-up.webp",
       "alt": "Лиза в полный рост с поднятыми руками",
-      "caption": "",
+      "caption": "Игривая Лизардина. Предмет по которому Лиза хотела ударить выясним позже.",
       "ratio": "2 / 3"
     },
     {
       "src": "photos/thumb-liza-03.webp",
       "full": "photos/full-liza-03.webp",
       "alt": "Лиза в бежевой рубашке",
-      "caption": "",
+      "caption": "Гламурная Лизка.  Ходят слухи, что в тот день ее видели с Евгеном.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-04.webp",
       "full": "photos/full-liza-04.webp",
       "alt": "Крупный план Лизы, фото 4",
-      "caption": "",
+      "caption": "Невинная Лиза с низу. Без агрессивного подтекста.",
       "ratio": "4 / 3"
     },
     {
       "src": "photos/thumb-liza-05.webp",
       "full": "photos/full-liza-05.webp",
       "alt": "Лиза улыбается, фото 5",
-      "caption": "",
+      "caption": "Довольная Лизардина. Ощущение, что она кого то на******** обманула.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-06.webp",
       "full": "photos/full-liza-06.webp",
       "alt": "Лиза в сером свитере",
-      "caption": "",
+      "caption": "Тут можно перепутать Лизу с рыбой каплей, но все таки это Лиза.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-07.webp",
       "full": "photos/full-liza-07.webp",
       "alt": "Лиза протягивает руку к камере",
-      "caption": "",
+      "caption": "Не дающая Лизка.",
       "ratio": "4 / 3"
     },
     {
       "src": "photos/thumb-liza-08.webp",
       "full": "photos/full-liza-08.webp",
       "alt": "Лиза в бордовой футболке",
-      "caption": "",
+      "caption": "Оператор сделавший этот снимок пропал при неизвестных обстоятельствах.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-09.webp",
       "full": "photos/full-liza-09.webp",
       "alt": "Крупный план Лизы, фото 9",
-      "caption": "",
+      "caption": "Сонная Лиза-Якут.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-10.webp",
       "full": "photos/full-liza-10.webp",
       "alt": "Лиза с книгой и наушником",
-      "caption": "",
+      "caption": "На этом снимке Лизардина проводит контроль качества.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-11.webp",
       "full": "photos/full-liza-11.webp",
       "alt": "Лиза в очках, фото 11",
-      "caption": "",
+      "caption": "Тут без комментариев...",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-13.webp",
       "full": "photos/full-liza-13.webp",
       "alt": "Лиза в чёрном пальто",
-      "caption": "",
+      "caption": "Слово Лизы - Пальто на асфальте.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-14.webp",
       "full": "photos/full-liza-14.webp",
       "alt": "Лиза в белой рубашке, ракурс снизу",
-      "caption": "",
+      "caption": "Тут тоже без комментариев...",
       "ratio": "4 / 3"
     },
     {
       "src": "photos/thumb-liza-15.webp",
       "full": "photos/full-liza-15.webp",
       "alt": "Лиза наклоняется к камере",
-      "caption": "",
+      "caption": "А ведь Лизочка уже пролила масло...",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/thumb-liza-photo.webp",
       "full": "photos/full-liza-photo.webp",
       "alt": "Крупный план Лизы",
-      "caption": "",
+      "caption": "А по зубам?",
       "ratio": "4 / 3"
     }
   ],
