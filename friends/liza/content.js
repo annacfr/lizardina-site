@@ -27,6 +27,10 @@ window.LIZARDINA_CONTENT = {
       "label": "литературное наследие\nлизардины"
     },
     {
+      "id": "truth",
+      "label": "Как все было на самом деле."
+    },
+    {
       "id": "letter",
       "label": "письмо от меня лизардине"
     }
@@ -202,5 +206,8 @@ window.LIZARDINA_CONTENT = {
     "badDay": {
       "enabled": false
     }
+  },
+  "truth": {
+    "paragraphs": []
   }
 };

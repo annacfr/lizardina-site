@@ -141,6 +141,8 @@
   $('prev-page').addEventListener('click', () => { if (bookPage > 0) { bookPage--; renderBook(); } });
   $('next-page').addEventListener('click', () => { if (bookPage < c.book.pages.length - 1) { bookPage++; renderBook(); } });
 
+  (c.truth?.paragraphs || []).forEach(text => { const p = document.createElement('p'); p.textContent = text; $('truth-content').append(p); });
+
   $('letter-heading').textContent = c.letter.greeting;
   c.letter.paragraphs.forEach(text => { const p = document.createElement('p'); p.textContent = text; $('letter-content').append(p); });
   $('letter-signature').textContent = c.letter.signature;
