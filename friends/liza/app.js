@@ -107,7 +107,7 @@
       const fallback = document.createElement('a');
       fallback.href = `https://www.youtube.com/watch?v=${id}`;
       fallback.target = '_blank'; fallback.rel = 'noopener noreferrer';
-      fallback.textContent = 'Открыть на YouTube ↗'; fallback.className = 'back';
+      fallback.textContent = 'Открыть на YouTube'; fallback.className = 'back';
       $('video-content').append(fallback);
     } else {
       const text = document.createElement('p'); text.className = 'empty-message';
@@ -117,11 +117,6 @@
     open($('video-dialog'));
   });
 
-  if (c.school.drawing) $('school-drawing').append(photo({ src: c.school.drawing, alt: 'Наш рисунок школы', caption: 'место действия — школа' }));
-  else {
-    const drawing = document.createElement('div'); drawing.className = 'drawing-empty'; drawing.textContent = 'здесь будет рисунок школы'; $('school-drawing').append(drawing);
-  }
-  c.school.photos.forEach(data => $('school-photos').append(figure(data)));
   c.gallery.forEach(data => $('gallery').append(figure(data)));
 
   function renderBook() {
@@ -132,7 +127,7 @@
       const heading = document.createElement('h3'); heading.textContent = page.title || '';
       const text = document.createElement('p'); text.textContent = page.text || '';
       $('book-page').append(heading);
-      if (page.image) $('book-page').append(image(page.image, `Страница ${bookPage + 1} истории «Уборщица Аня»`, true));
+      if (page.image) $('book-page').append(image(page.image, page.imageAlt || `Страница ${bookPage + 1} истории «Уборщица Аня»`, true));
       if (page.text) $('book-page').append(text);
     } else {
       const text = document.createElement('p'); text.textContent = 'Здесь будет наша детская история.'; $('book-page').append(text);
