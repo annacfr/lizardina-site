@@ -4,6 +4,18 @@ document.getElementById('greeting-caption').textContent = bandaContent.greetings
 const greetingDialog = document.getElementById('greeting-dialog');
 const greetingLarge = document.getElementById('greeting-large');
 let greetingTrigger;
+if (bandaContent.hero) {
+  const photo = bandaContent.hero;
+  const button = document.createElement('button');
+  button.type = 'button'; button.className = 'group-photo';
+  button.setAttribute('aria-label', 'Увеличить: ' + photo.alt);
+  const image = document.createElement('img');
+  image.src = photo.src; image.alt = photo.alt; image.width = photo.width; image.height = photo.height;
+  image.loading = 'eager'; image.decoding = 'async'; image.fetchPriority = 'high';
+  button.append(image);
+  button.addEventListener('click', () => { greetingTrigger = button; greetingLarge.src = photo.full || photo.src; greetingLarge.alt = photo.alt; greetingDialog.showModal(); });
+  document.getElementById('group-photo').append(button);
+}
 bandaContent.greetings.photos.forEach(photo => {
   const button = document.createElement('button');
   button.type = 'button'; button.className = 'greeting-photo';
