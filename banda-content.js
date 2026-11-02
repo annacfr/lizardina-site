@@ -4,8 +4,8 @@ window.BANDA_CONTENT = {
   greetings: {
     caption: "", // Сюда позже добавим твой текст под фотографиями.
     photos: [
-      { src: "assets/photos/greetings/from-me-01.jpg", alt: "Мои поздравления — фотография 1", width: 960, height: 1280 },
-      { src: "assets/photos/greetings/from-me-02.jpg", alt: "Мои поздравления — фотография 2", width: 956, height: 1280 }
+      { src: "assets/photos/greetings/from-me-01.jpg", alt: "Мои поздравления — фотография 1", width: 960, height: 1280, caption: "Мои любимые.\nЯ надеюсь, вы усытесь от этого сайта." },
+      { src: "assets/photos/greetings/from-me-02.jpg", alt: "Мои поздравления — фотография 2", width: 956, height: 1280, caption: "Всем йо! Двигаемся на тихом.\nКому не понравится, будете иметь дело со мной." }
     ]
   }
 };
@@ -28,7 +28,13 @@ bandaContent.greetings.photos.forEach(photo => {
     greetingTrigger = button; greetingLarge.src = photo.src; greetingLarge.alt = photo.alt;
     greetingDialog.showModal();
   });
-  document.getElementById('greeting-photos').append(button);
+  const figure = document.createElement('figure');
+  figure.className = 'greeting-figure';
+  const caption = document.createElement('figcaption');
+  caption.className = 'hand';
+  caption.textContent = photo.caption || '';
+  figure.append(button, caption);
+  document.getElementById('greeting-photos').append(figure);
 });
 greetingDialog.querySelector('button').addEventListener('click', () => greetingDialog.close());
 greetingDialog.addEventListener('click', event => { if (event.target === greetingDialog) { const r = greetingDialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) greetingDialog.close(); } });
