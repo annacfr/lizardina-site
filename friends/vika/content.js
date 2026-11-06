@@ -1,4 +1,4 @@
-// Фотографии в порядке показа. Подписи добавляются в caption.
+// Фотографии, подписи и афиша шуточного поединка.
 window.FRIEND_CONTENT = {
   "name": "Вика",
   "photos": [
@@ -114,5 +114,38 @@ window.FRIEND_CONTENT = {
       "width": 760,
       "height": 570
     }
-  ]
+  ],
+  "duel": {
+    "title": "Легендарный поединок",
+    "intro": "Этот кабинет повидал многое. Но не такое.",
+    "participants": [
+      {
+        "src": "photos/gallery/vika-03.webp",
+        "full": "photos/gallery/vika-03-full.webp",
+        "alt": "Фотография Вики 3",
+        "caption": "",
+        "width": 720,
+        "height": 960,
+        "name": "графиня Виктория"
+      },
+      {
+        "src": "photos/gallery/vika-02.webp",
+        "full": "photos/gallery/vika-02-full.webp",
+        "alt": "Фотография Вики 2",
+        "caption": "",
+        "width": 720,
+        "height": 960,
+        "name": "Шота Яковенко"
+      }
+    ],
+    "image": {
+      "src": "photos/duel/legendary-duel.webp",
+      "full": "photos/duel/legendary-duel-full.webp",
+      "alt": "Шуточная реконструкция: Виктория и Шота в постановочной дуэли на деревянных мечах",
+      "width": 960,
+      "height": 720
+    },
+    "caption": "Бюджет — картон.\nУщерб — репутационный.",
+    "credit": "реконструкция событий по версии гпт"
+  }
 };
