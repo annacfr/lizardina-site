@@ -73,7 +73,18 @@
   document.getElementById('connections-photo').prepend(photoButton(connections));
 
   const gallery = document.getElementById('gallery-photos');
-  gallery.append(...photos.map(photo => photoButton(photo)));
+  photos.forEach(photo => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-photo';
+    figure.append(photoButton(photo));
+    if (photo.caption) {
+      const caption = document.createElement('figcaption');
+      caption.className = 'hand';
+      caption.textContent = photo.caption;
+      figure.append(caption);
+    }
+    gallery.append(figure);
+  });
 
   const quiz = document.getElementById('field-quiz');
   const result = document.getElementById('field-quiz-result');

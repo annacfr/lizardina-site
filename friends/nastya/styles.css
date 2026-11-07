@@ -209,6 +209,17 @@
   height: auto;
 }
 
+.gallery-photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.gallery-photo figcaption {
+  margin: 10px 0 0;
+  font-size: 27px;
+  line-height: 1.15;
+}
+
 #gallery-photos > :nth-child(even) {
   width: 85%;
   justify-self: end;
