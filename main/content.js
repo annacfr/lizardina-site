@@ -2,6 +2,9 @@
 window.BANDA_CONTENT = {
   hero: { src: "main/photos/vozdukhanki.webp", full: "main/photos/vozdukhanki-full.webp", alt: "Воздуханки — вчетвером на качелях", width: 868, height: 1082 },
   intro: "дорогие мои, этот сайт для вас. да. это кринж, но я надеюсь вы поржете. Я и мой друг гпт вложили сюда душу. Не думайте, что мне это легко далось.",
+  friendshipPhotos: [
+    { src: "main/photos/our-ride.jpg", full: "main/photos/our-ride-full.jpg", alt: "Общий кадр на аттракционе", width: 720, height: 960 }
+  ],
   greetings: {
     caption: "", // Сюда позже добавим твой текст под фотографиями.
     photos: [

@@ -8,3 +8,31 @@
 .greeting-figure figcaption:empty{display:none}
 
 .homepage main{padding-top:22px}.homepage .intro{padding-top:3px}.homepage .intro h1{margin-top:10px;margin-bottom:18px}.group-photo{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;margin:0 0 28px}.group-photo img{display:block;width:100%;height:auto;object-fit:contain}.group-photo:focus-visible{outline:2px solid var(--olive);outline-offset:6px}
+
+.friendship-album {
+  margin-top: 42px;
+}
+
+.friendship-photo {
+  display: block;
+  width: 100%;
+  padding: clamp(4px, 1.6vw, 7px);
+  border: 1px solid var(--album-edge, #d9d3c5);
+  background: var(--album-print, #fffefb);
+  cursor: zoom-in;
+}
+
+.friendship-photo + .friendship-photo {
+  margin-top: 24px;
+}
+
+.friendship-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.friendship-photo:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+}

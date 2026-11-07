@@ -121,6 +121,22 @@ window.FRIEND_CONTENT = {
       "caption": "сука",
       "width": 760,
       "height": 570
+    },
+    {
+      "src": "photos/gallery/vika-and-art.jpg",
+      "full": "photos/gallery/vika-and-art-full.jpg",
+      "alt": "Вика стоит перед рисунком на заборе",
+      "caption": "",
+      "width": 540,
+      "height": 960
+    },
+    {
+      "src": "photos/gallery/intrigue-photo.jpg",
+      "full": "photos/gallery/intrigue-photo-full.jpg",
+      "alt": "Вика и её спутник подняли указательные пальцы",
+      "caption": "",
+      "width": 960,
+      "height": 720
     }
   ],
   "duel": {
