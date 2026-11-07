@@ -109,3 +109,153 @@
   margin: 6px 0 18px;
   padding-inline-start: 22px;
 }
+
+.intrigue-cover {
+  display: block;
+  width: min(100%, 320px);
+  margin: 0 auto;
+  padding: 22px 20px 18px;
+  background: #eeeee5;
+  border: 1px solid #686d55;
+  border-inline-start: 6px double #686d55;
+  text-align: left;
+  color: var(--olive);
+  cursor: pointer;
+  transform: rotate(-2deg);
+}
+
+.intrigue-stamp {
+  display: table;
+  margin: 0 0 20px auto;
+  padding: 3px 7px;
+  border: 1px solid currentColor;
+  color: #823f37;
+  font: 11px/1.2 Arial, sans-serif;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  transform: rotate(5deg);
+}
+
+.intrigue-cover-title,
+.intrigue-open-note {
+  display: block;
+}
+
+.intrigue-cover-title {
+  font-size: clamp(29px, 8vw, 38px);
+  line-height: 1.02;
+}
+
+.intrigue-open-note {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: right;
+}
+
+.intrigue-subtitle {
+  margin: 18px auto 0;
+  max-width: 285px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+html:has(.intrigue-reader[open]) {
+  overflow: hidden;
+}
+
+.intrigue-reader {
+  width: min(630px, calc(100vw - 20px));
+  max-width: none;
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  border: 1px solid #c1c0ae;
+  background: var(--paper);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.intrigue-reader[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+
+.intrigue-reader::backdrop {
+  background: rgba(19, 21, 16, .76);
+}
+
+.intrigue-reader-bar,
+.intrigue-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 14px;
+  font-size: 13px;
+}
+
+.intrigue-reader-bar {
+  border-bottom: 1px solid #deded1;
+  color: var(--olive);
+}
+
+.intrigue-controls {
+  border-top: 1px solid #deded1;
+}
+
+.intrigue-reader button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 6px;
+  border: 0;
+  background: transparent;
+  color: var(--olive);
+  font: inherit;
+  cursor: pointer;
+}
+
+.intrigue-reader button:disabled {
+  opacity: .4;
+  cursor: default;
+}
+
+.intrigue-reader #intrigue-close {
+  font-size: 28px;
+}
+
+.intrigue-sheet {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 20px clamp(14px, 4.7vw, 30px) 16px;
+}
+
+.intrigue-sheet h2 {
+  margin: 0 0 16px;
+  font-size: clamp(31px, 9vw, 43px);
+  line-height: 1.04;
+  color: var(--olive);
+}
+
+.intrigue-sheet p {
+  margin: 0 0 14px;
+  font-size: 17px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.intrigue-sheet .intrigue-date {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.intrigue-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px;
+}
+
+.intrigue-cover:focus-visible,
+.intrigue-reader button:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}

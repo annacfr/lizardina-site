@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#fdfdfb"><title>Вика — Воздуханки</title><link rel="stylesheet" href="../../main/styles.css"><link rel="stylesheet" href="../../shared/music.css"><script defer src="../../shared/audio-config.js"></script><script defer src="../../shared/music.js" data-page="vika"></script><link rel="stylesheet" href="styles.css?v=vika-archive-1"><script defer src="content.js?v=vika-camera-queen-2"></script><script defer src="app.js?v=vika-contents-1"></script></head><body><main class="vika-page"><a class="back" href="../../">← к Воздуханкам</a><h1 class="hand">Вика</h1><figure class="vika-hero" id="camera-queen"></figure>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#fdfdfb"><title>Вика — Воздуханки</title><link rel="stylesheet" href="../../main/styles.css"><link rel="stylesheet" href="../../shared/music.css"><script defer src="../../shared/audio-config.js"></script><script defer src="../../shared/music.js" data-page="vika"></script><link rel="stylesheet" href="styles.css?v=vika-intrigue-1"><script defer src="content.js?v=vika-camera-queen-2"></script><script defer src="app.js?v=vika-contents-1"></script><script defer src="intrigue-content.js?v=1"></script><script defer src="intrigue.js?v=1"></script></head><body><main class="vika-page"><a class="back" href="../../">← к Воздуханкам</a><h1 class="hand">Вика</h1><figure class="vika-hero" id="camera-queen"></figure>
   <section class="vika-contents" id="contents" aria-labelledby="contents-title">
     <h2 class="hand" id="contents-title">что тут вообще есть</h2>
     <nav aria-label="Разделы страницы Вики">
@@ -38,11 +38,32 @@
 
   <section class="vika-chapter" id="intrigue" aria-labelledby="intrigue-title">
     <h2 class="hand" id="intrigue-title">Интриги</h2>
-    <p class="small">Здесь появятся истории.</p>
+    <button class="intrigue-cover" id="intrigue-cover" type="button" aria-haspopup="dialog">
+      <span class="intrigue-stamp" aria-hidden="true">рассекречено</span>
+      <span class="hand intrigue-cover-title" id="intrigue-cover-title"></span>
+      <span class="hand intrigue-open-note">открыть дело →</span>
+    </button>
+    <p class="intrigue-subtitle" id="intrigue-subtitle"></p>
   </section>
 
   <section class="vika-chapter" id="letter" aria-labelledby="letter-title">
     <h2 class="hand" id="letter-title">Письмо</h2>
     <p class="small">Письмо появится здесь.</p>
   </section>
-</main><dialog id="vika-photo-dialog" aria-label="Фотография Вики"><button type="button" class="vika-close" aria-label="Закрыть фотографию">×</button><img id="vika-large" alt=""><p id="vika-large-caption" class="hand"></p></dialog></body></html>
+</main><dialog id="vika-photo-dialog" aria-label="Фотография Вики"><button type="button" class="vika-close" aria-label="Закрыть фотографию">×</button><img id="vika-large" alt=""><p id="vika-large-caption" class="hand"></p></dialog>
+<dialog class="intrigue-reader" id="intrigue-reader" aria-labelledby="intrigue-page-title">
+  <header class="intrigue-reader-bar">
+    <span>Из королевского архива</span>
+    <button id="intrigue-close" type="button" aria-label="Закрыть дело">×</button>
+  </header>
+  <article class="intrigue-sheet" id="intrigue-sheet">
+    <h2 class="hand" id="intrigue-page-title" tabindex="-1"></h2>
+    <div id="intrigue-page-content"></div>
+  </article>
+  <footer class="intrigue-controls">
+    <button id="intrigue-previous" type="button">← Назад</button>
+    <span id="intrigue-page-number" aria-live="polite"></span>
+    <button id="intrigue-next" type="button">Дальше →</button>
+  </footer>
+</dialog>
+</body></html>
