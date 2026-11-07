@@ -215,6 +215,13 @@ window.LIZARDINA_CONTENT = {
     }
   },
   "truth": {
-    "paragraphs": []
+    "paragraphs": [],
+    "photo": {
+      "src": "photos/truth/reveal.jpg",
+      "full": "photos/truth/reveal-full.jpg",
+      "alt": "Шуточное продолжение кадра: Лиза замахивается на манекен в джинсах",
+      "caption": "Предмет установлен.",
+      "ratio": "4 / 3"
+    }
   }
 };
