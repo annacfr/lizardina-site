@@ -13,6 +13,9 @@
   <script defer src="app.js?v=nastya-photos-1"></script>
   <script defer src="../../shared/audio-config.js"></script>
   <script defer src="../../shared/music.js" data-page="nastya"></script>
+
+  <link rel="stylesheet" href="../../shared/letter.css?v=1">
+  <script defer src="../../shared/letter.js?v=1"></script>
 </head>
 <body>
   <main class="nastya-page">
@@ -24,6 +27,7 @@
       <nav aria-label="Разделы страницы Насти">
         <a href="#story">История</a>
         <a href="#gallery">Фотографии</a>
+        <a href="#letter">Письмо</a>
       </nav>
     </section>
 
@@ -36,11 +40,30 @@
       <h2 class="hand" id="gallery-title">Фотографии</h2>
       <div class="nastya-photos" id="gallery-photos"></div>
     </section>
+
+  <section class="nastya-chapter friend-letter" id="letter" aria-labelledby="letter-title">
+    <h2 class="hand" id="letter-title">письмо от меня<br>Насте</h2>
+    <button class="letter-envelope" id="letter-button" type="button" aria-haspopup="dialog" aria-controls="letter-dialog" aria-label="Открыть письмо Насте">
+      <svg viewBox="0 0 320 200" aria-hidden="true">
+        <path d="M4 4L316 5L314 195L6 197ZM5 5L157 118Q161 122 166 118L315 6M5 195L110 83M314 195L212 84"/>
+      </svg>
+      <span class="hand letter-recipient">Насте</span>
+    </button>
+    <p class="hand letter-open-note">это тебе. открывай.</p>
+  </section>
   </main>
 
   <dialog id="photo-dialog" aria-label="Фотография Насти">
     <button type="button" class="photo-close" aria-label="Закрыть фотографию">×</button>
     <img id="large-photo" alt="">
+  </dialog>
+
+  <dialog class="friend-letter-dialog" id="letter-dialog" aria-labelledby="letter-heading">
+    <button type="button" aria-label="Закрыть письмо">×</button>
+    <h2 class="hand" id="letter-heading">Письмо Насте</h2>
+    <div class="hand friend-letter-text" id="letter-content">
+      <p>Письмо появится здесь.</p>
+    </div>
   </dialog>
 </body>
 </html>
