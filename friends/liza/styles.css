@@ -28,3 +28,11 @@ button.photo.photo-real{background:transparent}button.photo.photo-real img{objec
     margin-inline: 22px;
   }
 }
+
+/* Поля фотоальбома для кадров на странице Лизы. */
+:is(.hero-photo, #funny-photo, .gallery, .truth-content) button.photo.photo-real {
+  padding: clamp(4px, 1.6vw, 7px);
+  border: 1px solid var(--album-edge, #d9d3c5);
+  border-radius: 0;
+  background: var(--album-print, #fffefb);
+}

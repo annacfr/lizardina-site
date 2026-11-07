@@ -181,14 +181,14 @@ window.LIZARDINA_CONTENT = {
       "src": "photos/gallery/lizardina-edit.jpg",
       "full": "photos/gallery/lizardina-edit-full.jpg",
       "alt": "Лиза улыбается с закрытыми глазами",
-      "caption": "",
+      "caption": "Лизардина в эдите.",
       "ratio": "3 / 4"
     },
     {
       "src": "photos/gallery/on-the-pipe.jpg",
       "full": "photos/gallery/on-the-pipe-full.jpg",
       "alt": "Лиза сидит на трубе на солнце",
-      "caption": "",
+      "caption": "Лиза На теплотрассе.",
       "ratio": "3 / 4"
     }
   ],
