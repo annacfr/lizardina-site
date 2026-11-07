@@ -78,3 +78,34 @@
     font-size: 16px;
   }
 }
+
+.archive-warning {
+  margin: 0 0 16px;
+  font-size: 30px;
+  line-height: 1.12;
+  color: var(--olive);
+}
+
+.archive-video {
+  display: block;
+  width: min(100%, 280px);
+  height: auto;
+  aspect-ratio: 464 / 848;
+  margin: 0 auto;
+  background: #222;
+}
+
+.archive-notes {
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.archive-notes p {
+  margin: 0;
+}
+
+.archive-notes ul {
+  margin: 6px 0 18px;
+  padding-inline-start: 22px;
+}
