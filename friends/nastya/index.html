@@ -8,9 +8,9 @@
   <title>Настя — Воздуханки</title>
   <link rel="stylesheet" href="../../main/styles.css">
   <link rel="stylesheet" href="../../shared/music.css">
-  <link rel="stylesheet" href="styles.css?v=nastya-bench-1">
-  <script defer src="content.js?v=nastya-bench-1"></script>
-  <script defer src="app.js?v=nastya-bench-1"></script>
+  <link rel="stylesheet" href="styles.css?v=nastya-bench-2">
+  <script defer src="content.js?v=nastya-bench-2"></script>
+  <script defer src="app.js?v=nastya-bench-2"></script>
   <script defer src="../../shared/audio-config.js"></script>
   <script defer src="../../shared/music.js" data-page="nastya"></script>
 
@@ -39,7 +39,7 @@
       <h2 class="hand" id="story-title">Операция «Скамейка»</h2>
       <p class="case-intro">По документам — вышли посидеть.</p>
       <ol class="nastya-photos" id="story-photos"></ol>
-      <p class="hand case-verdict">На этом дело закрыли. Агату Кристи — пока нет.</p>
+      <p class="hand case-verdict">Есть подозрения, что памятник Пушкину обоссали.</p>
     </section>
 
     <section class="nastya-chapter" id="connections" aria-labelledby="connections-title">
@@ -52,27 +52,24 @@
     </section>
 
     <section class="nastya-chapter" id="field-test" aria-labelledby="field-test-title">
-      <h2 class="hand" id="field-test-title">Пойдёшь с Настей на дело?</h2>
+      <h2 class="hand" id="field-test-title">Возьмёт ли Настя тебя в сообщники?</h2>
       <form class="field-quiz" id="field-quiz">
         <fieldset>
-          <legend>1. Настя вдруг посмотрела в сторону. Ты?</legend>
-          <label><input type="radio" name="look" value="witness" required> Сразу: «Что? Где? Покажи».</label>
-          <label><input type="radio" name="look" value="decoy"> Делаю вид, что меня очень интересует газон.</label>
-          <label><input type="radio" name="look" value="partner"> Досижу спокойно. Потом спрошу.</label>
+          <legend>1. Настя выглядывает из-за книги. Твоя реакция?</legend>
+          <label><input type="radio" name="look" value="exposed" required> «Настя, а за кем мы следим?» Во весь голос.</label>
+          <label><input type="radio" name="look" value="discreet"> Сижу как сидела. Спрошу, когда уйдём.</label>
         </fieldset>
         <fieldset>
-          <legend>2. Что берёшь с собой на скамейку?</legend>
-          <label><input type="radio" name="kit" value="partner" required> Книгу. Вдруг вообще ничего не случится.</label>
-          <label><input type="radio" name="kit" value="witness"> Телефон. Я уже снимаю.</label>
-          <label><input type="radio" name="kit" value="decoy"> Что-нибудь пожевать. И вам возьму.</label>
+          <legend>2. У памятника Пушкину кое-что заметили. Кому сообщишь?</legend>
+          <label><input type="radio" name="report" value="discreet" required> Насте в личку: «У Пушкина есть новости».</label>
+          <label><input type="radio" name="report" value="exposed"> В общий чат. С фото и геометкой.</label>
         </fieldset>
         <fieldset>
-          <legend>3. Кто-то спрашивает, чем вы заняты.</legend>
-          <label><input type="radio" name="alibi" value="decoy" required> «А вы, кстати, знаете, где тут кофе?»</label>
-          <label><input type="radio" name="alibi" value="partner"> «Сидим». И продолжаю сидеть.</label>
-          <label><input type="radio" name="alibi" value="witness"> «А вы с какой целью интересуетесь?»</label>
+          <legend>3. Прохожий спрашивает, чем вы заняты.</legend>
+          <label><input type="radio" name="alibi" value="exposed" required> «Операция… то есть, мы тут просто сидим».</label>
+          <label><input type="radio" name="alibi" value="discreet"> «Читаем». Переворачиваю страницу.</label>
         </fieldset>
-        <button class="hand field-quiz-submit" type="submit">узнать, кого взяли</button>
+        <button class="hand field-quiz-submit" type="submit">узнать свою судьбу</button>
         <p class="hand field-quiz-result" id="field-quiz-result" tabindex="-1" hidden></p>
       </form>
     </section>
@@ -96,7 +93,7 @@
 
   <dialog id="photo-dialog" aria-label="Фотография Насти">
     <button type="button" class="photo-close" aria-label="Закрыть фотографию">×</button>
-    <img id="large-photo" alt="">
+    <div id="large-photo-frame"><img id="large-photo" alt=""></div>
   </dialog>
 
   <dialog class="friend-letter-dialog" id="letter-dialog" aria-labelledby="letter-heading">

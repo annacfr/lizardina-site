@@ -2,7 +2,20 @@
   const { story, connections, photos } = window.FRIEND_CONTENT;
   const dialog = document.getElementById('photo-dialog');
   const large = document.getElementById('large-photo');
+  const largeFrame = document.getElementById('large-photo-frame');
   let trigger;
+
+  function applyCrop(frame, photo) {
+    const crop = photo.crop;
+    frame.classList.toggle('photo-crop', Boolean(crop));
+    frame.classList.toggle('photo-crop-round', Boolean(crop?.round));
+    if (!crop) return;
+
+    frame.style.setProperty('--crop-ratio', crop.width / crop.height);
+    frame.style.setProperty('--crop-image-width', (photo.width / crop.width * 100) + '%');
+    frame.style.setProperty('--crop-left', (-crop.x / crop.width * 100) + '%');
+    frame.style.setProperty('--crop-top', (-crop.y / crop.height * 100) + '%');
+  }
 
   function photoButton(photo) {
     const button = document.createElement('button');
@@ -17,12 +30,20 @@
     image.height = photo.height;
     image.loading = 'lazy';
     image.decoding = 'async';
-    button.append(image);
+    if (photo.crop) {
+      const frame = document.createElement('span');
+      applyCrop(frame, photo);
+      frame.append(image);
+      button.append(frame);
+    } else {
+      button.append(image);
+    }
 
     button.addEventListener('click', () => {
       trigger = button;
       large.src = photo.full || photo.src;
       large.alt = photo.alt;
+      applyCrop(largeFrame, photo);
       dialog.showModal();
     });
     return button;
@@ -51,20 +72,14 @@
 
   const quiz = document.getElementById('field-quiz');
   const result = document.getElementById('field-quiz-result');
-  const outcomes = {
-    witness: 'Главный свидетель. Ты первой заметишь, что что-то происходит. И первой спросишь, что именно.',
-    decoy: 'Отвлекающий манёвр. Пока все решают, где взять кофе, Настя уже дочитала главу.',
-    partner: 'Берём в напарницы. Сидеть с умным видом и не выдавать остальных ты уже умеешь.',
-    tie: 'Ты на подхвате. Можешь посидеть, поснимать и сбегать за кофе. Настя оставила тебе место.'
-  };
-
   quiz.addEventListener('change', () => { result.hidden = true; });
   quiz.addEventListener('submit', event => {
     event.preventDefault();
-    const counts = { witness: 0, decoy: 0, partner: 0 };
-    for (const answer of new FormData(quiz).values()) counts[answer] += 1;
-    const majority = Object.keys(counts).find(answer => counts[answer] >= 2);
-    result.textContent = outcomes[majority || 'tie'];
+    const answers = [...new FormData(quiz).values()];
+    const discreet = answers.filter(answer => answer === 'discreet').length;
+    result.textContent = discreet >= 2
+      ? 'Настя берёт тебя в сообщники. Ты умеешь держать язык за зубами. Место на скамейке твоё.'
+      : 'Тебя ждёт судьба Пушкина. Памятника, если что. Настя просила не выносить это в общий чат.';
     result.hidden = false;
     result.focus({ preventScroll: true });
     result.scrollIntoView({ block: 'center' });

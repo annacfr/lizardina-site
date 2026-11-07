@@ -241,6 +241,32 @@
   object-fit: contain;
 }
 
+.photo-crop {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--crop-ratio);
+  overflow: hidden;
+}
+
+.photo-crop-round {
+  border-radius: 50%;
+}
+
+.photo-crop > img,
+#large-photo-frame.photo-crop > img {
+  position: absolute;
+  top: var(--crop-top);
+  left: var(--crop-left);
+  width: var(--crop-image-width);
+  max-height: none;
+}
+
+#large-photo-frame.photo-crop {
+  width: min(100%, calc((100dvh - 84px) * var(--crop-ratio)));
+  margin-inline: auto;
+}
+
 .nastya-photo-button:focus-visible,
 .photo-close:focus-visible {
   outline: 2px solid var(--olive);

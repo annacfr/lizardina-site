@@ -33,8 +33,8 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/story-4.jpg",
       "full": "photos/gallery/story-4-full.jpg",
       "alt": "Настя выглядывает из-за раскрытой книги Агаты Кристи",
-      "title": "Агата в прикрытии",
-      "caption": "Тут в дело вступает Агата Кристи. Книга закрывает пол-лица. По глазам над обложкой понятно: нас заметили.",
+      "title": "Настя начала слежку",
+      "caption": "Книгу открыла для вида. Смотрела поверх.",
       "width": 960,
       "height": 1280
     }
@@ -44,7 +44,8 @@ window.FRIEND_CONTENT = {
     "full": "photos/gallery/connections.png",
     "alt": "Связи Анастасии",
     "width": 307,
-    "height": 306
+    "height": 306,
+    "crop": { "x": 11, "y": 6, "width": 286, "height": 286, "round": true }
   },
   "photos": [
     {
@@ -52,14 +53,16 @@ window.FRIEND_CONTENT = {
       "full": "photos/gallery/stern-full.jpg",
       "alt": "Фотография Насти «грозная»",
       "width": 591,
-      "height": 1280
+      "height": 1280,
+      "crop": { "x": 0, "y": 149, "width": 591, "height": 1004 }
     },
     {
       "src": "photos/gallery/business.jpg",
       "full": "photos/gallery/business-full.jpg",
       "alt": "Фотография Насти «деловая»",
       "width": 562,
-      "height": 1280
+      "height": 1280,
+      "crop": { "x": 0, "y": 217, "width": 562, "height": 840 }
     },
     {
       "src": "photos/gallery/hiding.jpg",
