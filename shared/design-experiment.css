@@ -1,0 +1,41 @@
+/* Общие детали варианта: страницы по-прежнему работают на исходной разметке. */
+.origin-machine {
+  margin: 18px 0 16px;
+  color: var(--olive);
+}
+
+.origin-machine summary {
+  width: fit-content;
+  padding: 7px 0;
+  font-size: 23px;
+  line-height: 1.15;
+  cursor: pointer;
+}
+
+.origin-machine summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.origin-machine svg {
+  display: block;
+  width: min(100%, 250px);
+  height: auto;
+  margin: 3px 0 0 4px;
+}
+
+.origin-machine[open] .origin-tape {
+  animation: tape-drop .56s cubic-bezier(.3, .68, .52, 1) both;
+}
+
+@keyframes tape-drop {
+  0% { transform: translate(37px, -23px) rotate(10deg); opacity: 0; }
+  70% { transform: translate(-3px, 2px) rotate(-5deg); }
+  100% { transform: none; opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .origin-machine[open] .origin-tape {
+    animation: none;
+  }
+}
