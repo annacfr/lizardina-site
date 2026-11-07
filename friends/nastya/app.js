@@ -1,5 +1,5 @@
 (() => {
-  const { story, connections, photos } = window.FRIEND_CONTENT;
+  const { hero, story, connections, photos } = window.FRIEND_CONTENT;
   const dialog = document.getElementById('photo-dialog');
   const large = document.getElementById('large-photo');
   const largeFrame = document.getElementById('large-photo-frame');
@@ -17,7 +17,7 @@
     frame.style.setProperty('--crop-top', (-crop.y / crop.height * 100) + '%');
   }
 
-  function photoButton(photo) {
+  function photoButton(photo, eager = false) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'nastya-photo-button';
@@ -28,7 +28,7 @@
     image.alt = photo.alt;
     image.width = photo.width;
     image.height = photo.height;
-    image.loading = 'lazy';
+    image.loading = eager ? 'eager' : 'lazy';
     image.decoding = 'async';
     if (photo.crop) {
       const frame = document.createElement('span');
@@ -49,6 +49,11 @@
     return button;
   }
 
+  const heroCaption = document.createElement('figcaption');
+  heroCaption.className = 'hand';
+  heroCaption.textContent = hero.caption;
+  document.getElementById('nastya-fishing').append(heroCaption, photoButton(hero, true));
+
   const storyList = document.getElementById('story-photos');
   story.forEach(photo => {
     const item = document.createElement('li');
@@ -68,7 +73,7 @@
   document.getElementById('connections-photo').prepend(photoButton(connections));
 
   const gallery = document.getElementById('gallery-photos');
-  gallery.append(...photos.map(photoButton));
+  gallery.append(...photos.map(photo => photoButton(photo)));
 
   const quiz = document.getElementById('field-quiz');
   const result = document.getElementById('field-quiz-result');

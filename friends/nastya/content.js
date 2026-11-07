@@ -1,6 +1,14 @@
 // Снимки для истории и галереи Насти.
 window.FRIEND_CONTENT = {
   "name": "Настя",
+  "hero": {
+    "src": "photos/hero/fishing.jpg",
+    "full": "photos/hero/fishing-full.jpg",
+    "alt": "Настя на рыбалке",
+    "caption": "Если вселенная действительно бесконечна...",
+    "width": 800,
+    "height": 600
+  },
   "story": [
     {
       "src": "photos/gallery/story-1.jpg",
