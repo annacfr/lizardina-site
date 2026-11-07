@@ -6,7 +6,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-01.webp",
       "full": "photos/gallery/vika-01-full.webp",
       "alt": "Фотография Вики 1",
-      "caption": "",
+      "caption": "битва за дроздову",
       "width": 720,
       "height": 960
     },
@@ -14,7 +14,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-02.webp",
       "full": "photos/gallery/vika-02-full.webp",
       "alt": "Фотография Вики 2",
-      "caption": "",
+      "caption": "битва за дроздову 2",
       "width": 720,
       "height": 960
     },
@@ -22,7 +22,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-03.webp",
       "full": "photos/gallery/vika-03-full.webp",
       "alt": "Фотография Вики 3",
-      "caption": "",
+      "caption": "битва за дроздову 3",
       "width": 720,
       "height": 960
     },
@@ -30,7 +30,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-04.webp",
       "full": "photos/gallery/vika-04-full.webp",
       "alt": "Фотография Вики 4",
-      "caption": "",
+      "caption": "вид сверху",
       "width": 720,
       "height": 960
     },
@@ -38,7 +38,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-05.webp",
       "full": "photos/gallery/vika-05-full.webp",
       "alt": "Фотография Вики 5",
-      "caption": "",
+      "caption": "довольная",
       "width": 422,
       "height": 960
     },
@@ -46,23 +46,23 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-06.webp",
       "full": "photos/gallery/vika-06-full.webp",
       "alt": "Фотография Вики 6",
-      "caption": "",
+      "caption": "интелегенция",
       "width": 720,
       "height": 960
     },
     {
-      "src": "photos/gallery/vika-07.webp",
-      "full": "photos/gallery/vika-07-full.webp",
+      "src": "photos/gallery/vika-07.jpg",
+      "full": "photos/gallery/vika-07.jpg",
       "alt": "Фотография Вики 7",
-      "caption": "",
+      "caption": "интелегенция2",
       "width": 422,
-      "height": 960
+      "height": 618
     },
     {
       "src": "photos/gallery/vika-08.webp",
       "full": "photos/gallery/vika-08-full.webp",
       "alt": "Фотография Вики 8",
-      "caption": "",
+      "caption": "крипово",
       "width": 720,
       "height": 960
     },
@@ -70,7 +70,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-09.webp",
       "full": "photos/gallery/vika-09-full.webp",
       "alt": "Фотография Вики 9",
-      "caption": "",
+      "caption": "на мусорке",
       "width": 720,
       "height": 960
     },
@@ -78,7 +78,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-10.webp",
       "full": "photos/gallery/vika-10-full.webp",
       "alt": "Фотография Вики 10",
-      "caption": "",
+      "caption": "обдолбышь",
       "width": 760,
       "height": 570
     },
@@ -86,7 +86,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-11.webp",
       "full": "photos/gallery/vika-11-full.webp",
       "alt": "Фотография Вики 11",
-      "caption": "",
+      "caption": "програмист",
       "width": 720,
       "height": 960
     },
@@ -94,7 +94,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-12.webp",
       "full": "photos/gallery/vika-12-full.webp",
       "alt": "Фотография Вики 12",
-      "caption": "",
+      "caption": "риптилоед",
       "width": 720,
       "height": 960
     },
@@ -102,7 +102,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-13.webp",
       "full": "photos/gallery/vika-13-full.webp",
       "alt": "Фотография Вики 13",
-      "caption": "",
+      "caption": "с цветами",
       "width": 720,
       "height": 960
     },
@@ -110,7 +110,7 @@ window.FRIEND_CONTENT = {
       "src": "photos/gallery/vika-14.webp",
       "full": "photos/gallery/vika-14-full.webp",
       "alt": "Фотография Вики 14",
-      "caption": "",
+      "caption": "сука",
       "width": 760,
       "height": 570
     }
@@ -123,7 +123,7 @@ window.FRIEND_CONTENT = {
         "src": "photos/gallery/vika-03.webp",
         "full": "photos/gallery/vika-03-full.webp",
         "alt": "Фотография Вики 3",
-        "caption": "",
+        "caption": "битва за дроздову 3",
         "width": 720,
         "height": 960,
         "name": "графиня Виктория"
@@ -132,7 +132,7 @@ window.FRIEND_CONTENT = {
         "src": "photos/gallery/vika-02.webp",
         "full": "photos/gallery/vika-02-full.webp",
         "alt": "Фотография Вики 2",
-        "caption": "",
+        "caption": "битва за дроздову 2",
         "width": 720,
         "height": 960,
         "name": "Шота Яковенко"

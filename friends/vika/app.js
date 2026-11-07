@@ -15,7 +15,14 @@
     section.append(text('h2','hand duel-title',duel.title),text('p','duel-intro',duel.intro));
     const versus=document.createElement('div');versus.className='duel-versus';
     duel.participants.forEach((person,index)=>{
-      featured.add(person.src);const figure=document.createElement('figure');figure.className='duel-contender';figure.append(photoButton(person,true),text('figcaption','hand',person.name));
+      featured.add(person.src);
+      const figure = document.createElement('figure');
+      figure.className = 'duel-contender';
+      const caption = text('figcaption', 'hand', person.name);
+      if (person.caption) {
+        caption.append(document.createElement('br'), person.caption);
+      }
+      figure.append(photoButton(person, true), caption);
       if(index)versus.append(text('span','hand duel-vs','VS'));
       versus.append(figure);
     });
