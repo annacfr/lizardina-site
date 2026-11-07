@@ -60,7 +60,14 @@
     return figure;
   }
 
-  $('hero-photo').append(photo(c.hero, true));
+  const opening = $('young-deputy');
+  if (opening && c.openingPhoto) {
+    const caption = document.createElement('figcaption');
+    caption.className = 'hand';
+    caption.textContent = c.openingPhoto.caption;
+    opening.append(caption, photo(c.openingPhoto, true));
+  }
+  $('hero-photo').append(photo(c.hero, !c.openingPhoto));
   $('funny-photo').append(photo(c.funny));
   if (c.nicknameImage) {
     const name = image(c.nicknameImage, 'Лизардина', true);

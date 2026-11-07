@@ -1,6 +1,13 @@
 // Содержимое Лизардины. Авторский текст книги сохранён без исправлений.
 window.LIZARDINA_CONTENT = {
   "nicknameImage": null,
+  "openingPhoto": {
+    "src": "photos/hero/young-deputy.jpg",
+    "full": "photos/hero/young-deputy-full.jpg",
+    "alt": "Молодая депутатка на пленарном заседании Думы",
+    "caption": "Если вселенная действительно бесконечна...",
+    "ratio": "4 / 3"
+  },
   "hero": {
     "src": "photos/thumb-wonderful.webp",
     "full": "photos/full-wonderful.webp",

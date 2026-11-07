@@ -5,7 +5,7 @@ window.FRIEND_CONTENT = {
     "src": "photos/hero/camera-queen.jpg",
     "full": "photos/hero/camera-queen-full.jpg",
     "alt": "Королева камеры и покерная партия",
-    "caption": "Если вселенная бесконечна...",
+    "caption": "Если вселенная действительно бесконечна...",
     "width": 800,
     "height": 600
   },

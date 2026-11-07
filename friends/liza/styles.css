@@ -11,3 +11,20 @@ button.photo.photo-real{background:transparent}button.photo.photo-real img{objec
 .nickname-wrap{height:auto;min-height:94px}.story-start{margin-top:15px}.origin .video-preview{margin-top:26px}.book-page img{max-height:260px;object-fit:contain}.page-controls button{font-size:17px;padding:8px 11px}.book-page p{white-space:pre-wrap;overflow-wrap:anywhere}
 
 .truth-content{min-height:110px;margin-top:24px;font-size:19px;line-height:1.5;white-space:pre-line}.truth-content p{margin:0 0 20px}
+
+.opening-photo {
+  margin: 30px 29px 0;
+}
+
+.opening-photo figcaption {
+  margin: 0 0 14px;
+  color: var(--olive);
+  font-size: 34px;
+  line-height: 1.08;
+}
+
+@media (max-width: 359px) {
+  .opening-photo {
+    margin-inline: 22px;
+  }
+}
