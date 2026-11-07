@@ -5,32 +5,47 @@ window.FRIEND_CONTENT = {
     {
       "src": "photos/gallery/story-1.jpg",
       "full": "photos/gallery/story-1-full.jpg",
-      "alt": "История Насти, кадр 1",
+      "alt": "Настя на скамейке с банкой в руке и наушниками на шее",
+      "title": "Просто посидим",
+      "caption": "Скамейку заняли. Наушники пока на шее. Настя ещё улыбается фотографу — последнее мирное фото в деле.",
       "width": 960,
       "height": 1280
     },
     {
       "src": "photos/gallery/story-2.jpg",
       "full": "photos/gallery/story-2-full.jpg",
-      "alt": "История Насти, кадр 2",
+      "alt": "Настя в наушниках держит банку перед камерой",
+      "title": "Улика уже в кадре",
+      "caption": "Наушники уже на месте, очки чуть ниже. Настя показывает банку с таким видом, будто нам самим пора дать показания.",
       "width": 960,
       "height": 1280
     },
     {
       "src": "photos/gallery/story-3.jpg",
       "full": "photos/gallery/story-3-full.jpg",
-      "alt": "История Насти, кадр 3",
+      "alt": "Настя в наушниках смотрит в сторону",
+      "title": "Что там слева?",
+      "caption": "Настя отвлеклась на что-то за кадром. Что именно — не знаем: фотограф тоже смотрел на Настю.",
       "width": 960,
       "height": 1280
     },
     {
       "src": "photos/gallery/story-4.jpg",
       "full": "photos/gallery/story-4-full.jpg",
-      "alt": "История Насти, кадр 4",
+      "alt": "Настя выглядывает из-за раскрытой книги Агаты Кристи",
+      "title": "Агата в прикрытии",
+      "caption": "Тут в дело вступает Агата Кристи. Книга закрывает пол-лица. По глазам над обложкой понятно: нас заметили.",
       "width": 960,
       "height": 1280
     }
   ],
+  "connections": {
+    "src": "photos/gallery/connections.png",
+    "full": "photos/gallery/connections.png",
+    "alt": "Связи Анастасии",
+    "width": 307,
+    "height": 306
+  },
   "photos": [
     {
       "src": "photos/gallery/stern.jpg",
@@ -66,13 +81,6 @@ window.FRIEND_CONTENT = {
       "alt": "Фотография «Темное Прошлое»",
       "width": 960,
       "height": 1280
-    },
-    {
-      "src": "photos/gallery/connections.png",
-      "full": "photos/gallery/connections.png",
-      "alt": "Связи Анастасии",
-      "width": 307,
-      "height": 306
     }
   ]
 };

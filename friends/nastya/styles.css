@@ -3,6 +3,12 @@
   font-size: 76px;
 }
 
+.nastya-intro {
+  margin: -10px 0 40px;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
 .nastya-contents,
 .nastya-chapter {
   scroll-margin-top: 24px;
@@ -67,6 +73,120 @@
 #story-photos li::marker {
   font: 23px Caveat, 'Segoe Print', cursive;
   color: var(--olive);
+}
+
+.case-number {
+  margin: 0 0 8px;
+  color: var(--olive);
+  font-size: 13px;
+  letter-spacing: .06em;
+}
+
+#story-title,
+#connections-title {
+  margin-bottom: 12px;
+}
+
+.case-intro {
+  margin: 0 0 25px;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+#story-photos figure {
+  margin: 0;
+}
+
+#story-photos h3 {
+  margin: 10px 0 3px;
+  color: var(--olive);
+  font-size: 30px;
+  line-height: 1.04;
+}
+
+#story-photos figcaption p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.case-verdict {
+  margin: 30px 0 0 14px;
+  color: var(--olive);
+  font-size: 29px;
+  line-height: 1.1;
+  transform: rotate(-2deg);
+}
+
+.case-contact {
+  width: min(85%, 255px);
+  margin: 0 0 0 auto;
+}
+
+.case-contact figcaption {
+  margin-top: 7px;
+  font-size: 26px;
+  line-height: 1.12;
+  text-align: right;
+}
+
+.field-quiz {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.field-quiz fieldset {
+  min-width: 0;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.field-quiz legend {
+  margin-bottom: 5px;
+  padding: 0;
+  font-weight: 700;
+}
+
+.field-quiz label {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  min-height: 44px;
+  padding: 9px 0;
+  cursor: pointer;
+}
+
+.field-quiz input {
+  margin: 0;
+  flex: none;
+  accent-color: var(--olive);
+}
+
+.field-quiz-submit {
+  min-height: 44px;
+  padding: 4px 14px 7px;
+  border: 1px solid var(--olive);
+  border-radius: 3px 5px 4px 2px;
+  background: transparent;
+  color: var(--olive);
+  font-size: 25px;
+  line-height: 1.1;
+  cursor: pointer;
+}
+
+.field-quiz-submit:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+}
+
+.field-quiz-result {
+  margin: 20px 0 0;
+  padding-inline-start: 12px;
+  border-inline-start: 2px solid var(--olive);
+  color: var(--olive);
+  font-size: 27px;
+  line-height: 1.12;
 }
 
 .nastya-photo-button {

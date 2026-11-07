@@ -8,9 +8,9 @@
   <title>Настя — Воздуханки</title>
   <link rel="stylesheet" href="../../main/styles.css">
   <link rel="stylesheet" href="../../shared/music.css">
-  <link rel="stylesheet" href="styles.css?v=nastya-photos-1">
-  <script defer src="content.js?v=nastya-photos-1"></script>
-  <script defer src="app.js?v=nastya-photos-1"></script>
+  <link rel="stylesheet" href="styles.css?v=nastya-bench-1">
+  <script defer src="content.js?v=nastya-bench-1"></script>
+  <script defer src="app.js?v=nastya-bench-1"></script>
   <script defer src="../../shared/audio-config.js"></script>
   <script defer src="../../shared/music.js" data-page="nastya"></script>
 
@@ -21,19 +21,60 @@
   <main class="nastya-page">
     <a class="back" href="../../">← к Воздуханкам</a>
     <h1 class="hand">Настя</h1>
+    <p class="nastya-intro">С Настей можно выйти на полчасика и вернуться с четырьмя кадрами, которые почему-то хочется пронумеровать и подшить к делу.</p>
 
     <section class="nastya-contents" id="contents" aria-labelledby="contents-title">
       <h2 class="hand" id="contents-title">что тут вообще есть</h2>
       <nav aria-label="Разделы страницы Насти">
-        <a href="#story">История</a>
+        <a href="#story">Операция «Скамейка»</a>
+        <a href="#connections">Связи Насти</a>
+        <a href="#field-test">Тест для напарницы</a>
         <a href="#gallery">Фотографии</a>
         <a href="#letter">Письмо</a>
       </nav>
     </section>
 
     <section class="nastya-chapter" id="story" aria-labelledby="story-title">
-      <h2 class="hand" id="story-title">История</h2>
+      <p class="case-number">Дело № 003</p>
+      <h2 class="hand" id="story-title">Операция «Скамейка»</h2>
+      <p class="case-intro">По документам — вышли посидеть.</p>
       <ol class="nastya-photos" id="story-photos"></ol>
+      <p class="hand case-verdict">На этом дело закрыли. Агату Кристи — пока нет.</p>
+    </section>
+
+    <section class="nastya-chapter" id="connections" aria-labelledby="connections-title">
+      <p class="case-number">Приложение к делу № 003</p>
+      <h2 class="hand" id="connections-title">Связи Насти</h2>
+      <p class="case-intro">К делу приобщили один кружок. Кто с кем на связи, видно. О чём говорили — уже не наше дело.</p>
+      <figure class="case-contact" id="connections-photo">
+        <figcaption class="hand">Да, у Насти есть связи.</figcaption>
+      </figure>
+    </section>
+
+    <section class="nastya-chapter" id="field-test" aria-labelledby="field-test-title">
+      <h2 class="hand" id="field-test-title">Пойдёшь с Настей на дело?</h2>
+      <form class="field-quiz" id="field-quiz">
+        <fieldset>
+          <legend>1. Настя вдруг посмотрела в сторону. Ты?</legend>
+          <label><input type="radio" name="look" value="witness" required> Сразу: «Что? Где? Покажи».</label>
+          <label><input type="radio" name="look" value="decoy"> Делаю вид, что меня очень интересует газон.</label>
+          <label><input type="radio" name="look" value="partner"> Досижу спокойно. Потом спрошу.</label>
+        </fieldset>
+        <fieldset>
+          <legend>2. Что берёшь с собой на скамейку?</legend>
+          <label><input type="radio" name="kit" value="partner" required> Книгу. Вдруг вообще ничего не случится.</label>
+          <label><input type="radio" name="kit" value="witness"> Телефон. Я уже снимаю.</label>
+          <label><input type="radio" name="kit" value="decoy"> Что-нибудь пожевать. И вам возьму.</label>
+        </fieldset>
+        <fieldset>
+          <legend>3. Кто-то спрашивает, чем вы заняты.</legend>
+          <label><input type="radio" name="alibi" value="decoy" required> «А вы, кстати, знаете, где тут кофе?»</label>
+          <label><input type="radio" name="alibi" value="partner"> «Сидим». И продолжаю сидеть.</label>
+          <label><input type="radio" name="alibi" value="witness"> «А вы с какой целью интересуетесь?»</label>
+        </fieldset>
+        <button class="hand field-quiz-submit" type="submit">узнать, кого взяли</button>
+        <p class="hand field-quiz-result" id="field-quiz-result" tabindex="-1" hidden></p>
+      </form>
     </section>
 
     <section class="nastya-chapter" id="gallery" aria-labelledby="gallery-title">
