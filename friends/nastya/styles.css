@@ -1,0 +1,138 @@
+.nastya-page h1 {
+  margin: 36px 0 46px;
+  font-size: 76px;
+}
+
+.nastya-contents,
+.nastya-chapter {
+  scroll-margin-top: 24px;
+}
+
+.nastya-contents {
+  text-align: center;
+}
+
+.nastya-contents h2 {
+  margin: 0 0 22px;
+  font-size: clamp(35px, 10.5vw, 42px);
+  line-height: 1.06;
+  transform: rotate(-2deg);
+}
+
+.nastya-contents nav {
+  margin: 0;
+  padding: 15px 28px 17px;
+  border-radius: 32px;
+  background: #ebebe8;
+  text-align: left;
+}
+
+.nastya-contents nav a {
+  display: block;
+  min-height: 44px;
+  padding: 13px 0;
+  border: 0;
+  font-size: 18px;
+  line-height: 1.23;
+}
+
+.nastya-contents nav a:hover,
+.nastya-contents nav a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.nastya-chapter {
+  margin-top: 60px;
+}
+
+.nastya-chapter h2 {
+  margin: 0 0 26px;
+  color: var(--olive);
+  font-size: 39px;
+  line-height: 1.05;
+}
+
+.nastya-photos {
+  display: grid;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+#story-photos {
+  padding-inline-start: 23px;
+}
+
+#story-photos li::marker {
+  font: 23px Caveat, 'Segoe Print', cursive;
+  color: var(--olive);
+}
+
+.nastya-photo-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.nastya-photo-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#gallery-photos > :nth-child(even) {
+  width: 85%;
+  justify-self: end;
+}
+
+#photo-dialog {
+  width: min(700px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  border: 0;
+  padding: 0 12px 12px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+#photo-dialog::backdrop {
+  background: rgba(19, 21, 16, .76);
+}
+
+.photo-close {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-inline-start: auto;
+  border: 0;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#large-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100dvh - 84px);
+  object-fit: contain;
+}
+
+.nastya-photo-button:focus-visible,
+.photo-close:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+}
+
+@media (max-width: 359px) {
+  .nastya-contents nav {
+    padding-inline: 23px;
+  }
+
+  .nastya-contents nav a {
+    font-size: 16px;
+  }
+}

@@ -1,2 +1,46 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#fdfdfb"><title>Настя — Воздуханки</title><link rel="stylesheet" href="../../main/styles.css"><link rel="stylesheet" href="../../shared/music.css"><script defer src="../../shared/audio-config.js"></script><script defer src="../../shared/music.js" data-page="nastya"></script></head><body><main class="empty"><a class="back" href="../../">← к Воздуханкам</a><h1 class="hand">Настя</h1><p class="small">Истории здесь появятся позже. А песня уже есть.</p></main></body></html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fdfdfb">
+  <title>Настя — Воздуханки</title>
+  <link rel="stylesheet" href="../../main/styles.css">
+  <link rel="stylesheet" href="../../shared/music.css">
+  <link rel="stylesheet" href="styles.css?v=nastya-photos-1">
+  <script defer src="content.js?v=nastya-photos-1"></script>
+  <script defer src="app.js?v=nastya-photos-1"></script>
+  <script defer src="../../shared/audio-config.js"></script>
+  <script defer src="../../shared/music.js" data-page="nastya"></script>
+</head>
+<body>
+  <main class="nastya-page">
+    <a class="back" href="../../">← к Воздуханкам</a>
+    <h1 class="hand">Настя</h1>
+
+    <section class="nastya-contents" id="contents" aria-labelledby="contents-title">
+      <h2 class="hand" id="contents-title">что тут вообще есть</h2>
+      <nav aria-label="Разделы страницы Насти">
+        <a href="#story">История</a>
+        <a href="#gallery">Фотографии</a>
+      </nav>
+    </section>
+
+    <section class="nastya-chapter" id="story" aria-labelledby="story-title">
+      <h2 class="hand" id="story-title">История</h2>
+      <ol class="nastya-photos" id="story-photos"></ol>
+    </section>
+
+    <section class="nastya-chapter" id="gallery" aria-labelledby="gallery-title">
+      <h2 class="hand" id="gallery-title">Фотографии</h2>
+      <div class="nastya-photos" id="gallery-photos"></div>
+    </section>
+  </main>
+
+  <dialog id="photo-dialog" aria-label="Фотография Насти">
+    <button type="button" class="photo-close" aria-label="Закрыть фотографию">×</button>
+    <img id="large-photo" alt="">
+  </dialog>
+</body>
+</html>
