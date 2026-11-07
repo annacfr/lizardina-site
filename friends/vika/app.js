@@ -36,10 +36,9 @@
     });
     section.append(versus,text('p','hand duel-round','Раунд 1. Достоинство покинуло чат.'));
     const battle=document.createElement('figure');battle.className='duel-battle';battle.append(photoButton(duel.image),text('figcaption','hand duel-caption',duel.caption));section.append(battle);
-    section.append(text('h2','hand duel-rest','жизнь Графини отрочество'));
   }
   data.photos.filter(photo=>!featured.has(photo.src)).forEach((photo,index)=>{
-    const figure=document.createElement('figure');figure.className='vika-photo';const caption=text('figcaption','hand',photo.caption);figure.append(photoButton(photo,index===0),caption);document.getElementById('vika-gallery').append(figure);
+    const figure=document.createElement('figure');figure.className='vika-photo';const caption=text('figcaption','hand',photo.caption);figure.append(photoButton(photo,index===0),caption);document.getElementById('vika-gallery-photos').append(figure);
   });
   dialog.querySelector('button').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',e=>{if(e.target===dialog){const b=dialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)dialog.close();}});

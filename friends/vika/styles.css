@@ -1,5 +1,5 @@
 .vika-page h1{font-size:76px;margin:36px 0 38px}.vika-photo{width:93%;margin:0 0 20px}.vika-photo:nth-child(even){width:85%;margin-left:auto}.vika-photo button{display:block;border:0;padding:0;background:none;width:100%;cursor:zoom-in}.vika-photo img{display:block;width:100%;height:auto}.vika-photo figcaption{min-height:55px;margin:14px 2px 0;font-size:27px;line-height:1.2;white-space:pre-line;overflow-wrap:break-word}#vika-photo-dialog{border:0;padding:0 12px 18px;background:#fdfdfb;color:#151612;width:min(700px,calc(100vw - 24px));max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px)}#vika-photo-dialog::backdrop{background:rgba(19,21,16,.76)}.vika-close{display:block;margin-left:auto;width:44px;height:44px;border:0;background:none;font-size:30px;cursor:pointer}#vika-large{display:block;width:100%;height:auto;max-height:calc(100dvh - 110px);object-fit:contain}#vika-large-caption{font-size:28px;margin:12px 0 0}.vika-photo button:focus-visible,.vika-close:focus-visible{outline:2px solid #354022;outline-offset:5px}
-.duel{margin-top:8px}.duel-title{font-size:49px;line-height:.96;margin:0 0 20px;transform:rotate(-3deg);color:#354022}.duel-intro{font-size:16px;line-height:1.45;margin:0 0 32px;max-width:260px}.duel-versus{display:grid;grid-template-columns:minmax(0,1fr) 26px minmax(0,1fr);align-items:center;gap:4px}.duel-contender{margin:0;min-width:0;align-self:start}.duel-contender:first-child{transform:rotate(-3deg)}.duel-contender:last-child{transform:rotate(3deg);margin-top:22px}.vika-image-button{display:block;width:100%;border:0;padding:0;background:none;cursor:zoom-in}.vika-image-button img{display:block;width:100%;height:auto}.duel-contender figcaption{font-size:29px;line-height:1.02;text-align:center;margin-top:13px;overflow-wrap:break-word}.duel-vs{font-size:30px;color:#354022;text-align:center;align-self:center}.duel-round{font-size:30px;line-height:1.05;margin:39px 0 22px;transform:rotate(-2deg)}.duel-battle{margin:0}.duel-caption{font-size:30px;line-height:1.12;white-space:pre-line;margin:15px 0 8px}.duel-credit{font-size:12px;color:#777771;margin:0}.duel-rest{font-size:35px;font-weight:400;line-height:1.05;margin:60px 0 30px}.duel .vika-image-button:focus-visible{outline:2px solid #354022;outline-offset:4px}@media(max-width:359px){.duel-title{font-size:43px}.duel-contender figcaption{font-size:25px}.duel-round{font-size:27px}}
+.duel{margin-top:8px}.duel-title{font-size:49px;line-height:.96;margin:0 0 20px;transform:rotate(-3deg);color:#354022}.duel-intro{font-size:16px;line-height:1.45;margin:0 0 32px;max-width:260px}.duel-versus{display:grid;grid-template-columns:minmax(0,1fr) 26px minmax(0,1fr);align-items:center;gap:4px}.duel-contender{margin:0;min-width:0;align-self:start}.duel-contender:first-child{transform:rotate(-3deg)}.duel-contender:last-child{transform:rotate(3deg);margin-top:22px}.vika-image-button{display:block;width:100%;border:0;padding:0;background:none;cursor:zoom-in}.vika-image-button img{display:block;width:100%;height:auto}.duel-contender figcaption{font-size:29px;line-height:1.02;text-align:center;margin-top:13px;overflow-wrap:break-word}.duel-vs{font-size:30px;color:#354022;text-align:center;align-self:center}.duel-round{font-size:30px;line-height:1.05;margin:39px 0 22px;transform:rotate(-2deg)}.duel-battle{margin:0}.duel-caption{font-size:30px;line-height:1.12;white-space:pre-line;margin:15px 0 8px}.duel-credit{font-size:12px;color:#777771;margin:0}.duel .vika-image-button:focus-visible{outline:2px solid #354022;outline-offset:4px}@media(max-width:359px){.duel-title{font-size:43px}.duel-contender figcaption{font-size:25px}.duel-round{font-size:27px}}
 
 
 .vika-hero {
@@ -16,4 +16,65 @@
 .vika-hero button:focus-visible {
   outline: 2px solid var(--olive);
   outline-offset: 4px;
+}
+
+.vika-contents,
+.vika-chapter,
+#legendary-duel {
+  scroll-margin-top: 24px;
+}
+
+.vika-contents {
+  margin: 0 0 64px;
+  text-align: center;
+}
+
+.vika-contents h2 {
+  margin: 0 0 22px;
+  font-size: clamp(35px, 10.5vw, 42px);
+  line-height: 1.06;
+  transform: rotate(-2deg);
+}
+
+.vika-contents nav {
+  margin: 0;
+  padding: 15px 28px 17px;
+  border-radius: 32px;
+  background: #ebebe8;
+  text-align: left;
+}
+
+.vika-contents nav a {
+  display: block;
+  min-height: 44px;
+  padding: 13px 0;
+  border: 0;
+  font-size: 18px;
+  line-height: 1.23;
+}
+
+.vika-contents nav a:hover,
+.vika-contents nav a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.vika-chapter {
+  margin-top: 60px;
+}
+
+.vika-chapter h2 {
+  margin: 0 0 30px;
+  font-size: 35px;
+  line-height: 1.05;
+}
+
+@media (max-width: 359px) {
+  .vika-contents nav {
+    padding-inline: 23px;
+  }
+
+  .vika-contents nav a {
+    font-size: 16px;
+  }
 }
