@@ -1,0 +1,72 @@
+/* Поля альбома. Рамки только у снимков с фоном. */
+:root {
+  --paper: #fdfbf6;
+  --olive: #3e4a31;
+  --album-edge: #d9d3c5;
+  --album-print: #fffefb;
+}
+
+body {
+  background: #f1eee7;
+}
+
+main {
+  border-inline: 1px solid #e9e3d7;
+}
+
+.homepage h1 {
+  font-size: clamp(55px, 18vw, 88px);
+}
+
+.homepage #group-photo {
+  margin-block: 4px 22px;
+}
+
+.homepage .description {
+  margin-inline-start: 9px;
+}
+
+.homepage .greeting-figure {
+  margin-inline: 0;
+}
+
+.greeting-photo,
+.opening-photo button.photo,
+.vika-hero .vika-image-button,
+.duel-battle .vika-image-button,
+.duel-contender .vika-image-button,
+.vika-photo .vika-image-button,
+.nastya-hero .nastya-photo-button,
+#story-photos .nastya-photo-button,
+.gallery-photo .nastya-photo-button {
+  padding: clamp(4px, 1.6vw, 7px);
+  border: 1px solid var(--album-edge);
+  border-radius: 0;
+  background: var(--album-print);
+}
+
+.homepage .greeting-figure:nth-child(odd) .greeting-photo {
+  transform: rotate(-1.3deg);
+}
+
+.homepage .greeting-figure:nth-child(even) .greeting-photo {
+  transform: rotate(1deg);
+}
+
+.vika-photo:nth-child(even) .vika-image-button,
+.gallery-photo:nth-child(even) .nastya-photo-button {
+  transform: rotate(1deg);
+}
+
+.contents-list,
+.vika-contents nav,
+.nastya-contents nav {
+  border: 1px solid var(--album-edge);
+  border-radius: 5px 10px 7px 4px;
+  background: #f4f0e8;
+}
+
+.music-dock {
+  border-top-color: var(--album-edge);
+  background: var(--paper);
+}
