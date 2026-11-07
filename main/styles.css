@@ -36,3 +36,24 @@
   outline: 2px solid var(--olive);
   outline-offset: 4px;
 }
+
+.friendship-soundtrack {
+  margin-top: 52px;
+}
+
+.friendship-soundtrack h2 {
+  margin: 0 0 20px;
+  color: var(--olive);
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.friendship-track + .friendship-track {
+  margin-top: 36px;
+}
+
+.friendship-track audio {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}

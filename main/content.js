@@ -5,6 +5,18 @@ window.BANDA_CONTENT = {
   friendshipPhotos: [
     { src: "main/photos/our-ride.jpg", full: "main/photos/our-ride-full.jpg", alt: "Общий кадр на аттракционе", width: 720, height: 960 }
   ],
+  soundtrack: [
+    {
+      title: "Битва за дневник",
+      audio: "main/audio/battle-for-the-diary.mp3",
+      cover: { src: "main/audio/covers/battle-for-the-diary.jpg", alt: "Обложка песни «Битва за дневник»", width: 1100, height: 619 }
+    },
+    {
+      title: "Легенда о несостоявшейся прогулке",
+      audio: "main/audio/legend-of-the-walk.mp3",
+      cover: { src: "main/audio/covers/legend-of-the-walk.jpg", alt: "Обложка песни «Легенда о несостоявшейся прогулке»", width: 1100, height: 825 }
+    }
+  ],
   greetings: {
     caption: "", // Сюда позже добавим твой текст под фотографиями.
     photos: [

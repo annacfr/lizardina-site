@@ -49,6 +49,37 @@ for (const photo of bandaContent.friendshipPhotos || []) {
   friendshipAlbum.append(createPhotoButton(photo, 'friendship-photo'));
 }
 
+const soundtrack = document.getElementById('friendship-soundtrack');
+for (const track of bandaContent.soundtrack || []) {
+  const entry = document.createElement('div');
+  entry.className = 'friendship-track';
+
+  const player = document.createElement('audio');
+  player.controls = true;
+  player.preload = 'none';
+  player.src = track.audio;
+  player.setAttribute('aria-label', track.title);
+  entry.append(createPhotoButton(track.cover, 'friendship-photo'), player);
+  soundtrack.append(entry);
+}
+
+// Play events do not bubble. Capture them to include the fixed hymn player.
+document.addEventListener('play', event => {
+  const playing = event.target;
+  if (!(playing instanceof HTMLAudioElement)) return;
+
+  for (const player of document.querySelectorAll('audio')) {
+    if (player !== playing && !player.paused) player.pause();
+  }
+  if ('mediaSession' in navigator && 'MediaMetadata' in window) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: playing.getAttribute('aria-label'),
+      album: 'Воздуханки'
+    });
+  }
+}, true);
+
+
 greetingDialog.querySelector('button').addEventListener('click', () => greetingDialog.close());
 greetingDialog.addEventListener('click', event => { if (event.target === greetingDialog) { const r = greetingDialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) greetingDialog.close(); } });
 greetingDialog.addEventListener('close', () => { greetingLarge.removeAttribute('src'); greetingTrigger?.focus(); });
