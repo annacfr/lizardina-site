@@ -20,8 +20,8 @@
       versus.append(figure);
     });
     section.append(versus,text('p','hand duel-round','Раунд 1. Достоинство покинуло чат.'));
-    const battle=document.createElement('figure');battle.className='duel-battle';battle.append(photoButton(duel.image),text('figcaption','hand duel-caption',duel.caption),text('p','duel-credit',duel.credit));section.append(battle);
-    section.append(text('h2','hand duel-rest','а это — остальные улики'));
+    const battle=document.createElement('figure');battle.className='duel-battle';battle.append(photoButton(duel.image),text('figcaption','hand duel-caption',duel.caption));section.append(battle);
+    section.append(text('h2','hand duel-rest','жизнь Графини отрочество'));
   }
   data.photos.filter(photo=>!featured.has(photo.src)).forEach((photo,index)=>{
     const figure=document.createElement('figure');figure.className='vika-photo';const caption=text('figcaption','hand',photo.caption);figure.append(photoButton(photo,index===0),caption);document.getElementById('vika-gallery').append(figure);
