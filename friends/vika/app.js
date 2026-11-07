@@ -9,6 +9,14 @@
     button.addEventListener('click',()=>{trigger=button;large.src=photo.full||photo.src;large.alt=photo.alt;document.getElementById('vika-large-caption').textContent=photo.caption||'';dialog.showModal();});return button;
   }
   function text(tag,cls,value){const el=document.createElement(tag);el.className=cls;el.textContent=value;return el;}
+  const hero = document.getElementById('camera-queen');
+  if (hero && data.hero) {
+    hero.append(
+      text('figcaption', 'hand', data.hero.caption),
+      photoButton(data.hero, true)
+    );
+  }
+
   const featured = new Set();
   if(data.duel){
     const duel=data.duel,section=document.getElementById('legendary-duel');section.className='duel';

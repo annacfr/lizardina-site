@@ -1,6 +1,14 @@
 // Фотографии, подписи и афиша шуточного поединка.
 window.FRIEND_CONTENT = {
   "name": "Вика",
+  "hero": {
+    "src": "photos/hero/camera-queen.jpg",
+    "full": "photos/hero/camera-queen-full.jpg",
+    "alt": "Королева камеры и покерная партия",
+    "caption": "Если вселенная бесконечна...",
+    "width": 800,
+    "height": 600
+  },
   "photos": [
     {
       "src": "photos/gallery/vika-01.webp",
